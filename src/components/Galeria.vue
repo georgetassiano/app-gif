@@ -6,30 +6,9 @@
           <h1 class="mb-4">Galeria de Gifs</h1>
           <div class="row">
             <div class="col-md-12">
-              <ul class="pagination pagination-lg" style="display: inline-flex; margin: 0 auto">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">«</span> <span class="sr-only">Previous</span> </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">»</span> <span class="sr-only">Next</span> </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
               <form class="form-inline" role="search" @submit.prevent="filtrarLista()">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="procurar gif..." v-model="gifProcurado">
+                  <input class="form-control" type="text" placeholder="procurar gif..." v-model="gifProcurado" size="12">
                 </div>
                 <button type="submit" class="btn btn-default"><i class="fa fa-fw fa-search"></i></button>
               </form>
@@ -58,7 +37,7 @@ export default {
     }
   },
   mounted () {
-    this.axios.get('http://api.giphy.com/v1/gifs/trending', {
+    this.axios.get('https://api.giphy.com/v1/gifs/trending', {
       params: {
         api_key: '38302bed4a7543899b368c64a7ef231f',
         limit: 60

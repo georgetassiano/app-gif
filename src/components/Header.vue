@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="display-2">Pokédex de Gifs</h1>
+          <h1>Pokédex de Gifs</h1>
           <h5>Seja bem vindo!</h5>
           <a href="#speakers" class="btn btn-lg btn-info mt-4">Veja os Gifs</a>
         </div>

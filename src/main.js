@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import database from './plugins/database'
 import VueClipboard from 'vue-clipboard2'
 import * as pagination from 'vuejs-uib-pagination'
 import lodash from 'lodash'
@@ -19,8 +18,6 @@ Vue.use(pagination)
 Vue.use(VueClipboard)
 
 Vue.config.productionTip = false
-
-Vue.use(database)
 
 /* eslint-disable no-new */
 new Vue({

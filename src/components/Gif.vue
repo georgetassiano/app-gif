@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4 col-6">
+  <div class="col-md-6 col-lg-4">
     <img :src="imagem" class="center-block img-fluid my-3 img-thumbnail">
     <h3 style="color: #FF540D">{{nome}}</h3>
     <button class="btn btn-secondary" :href="url"
